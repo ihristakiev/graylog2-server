@@ -24,6 +24,7 @@ package org.graylog2.messagequeue;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class QueueLimitReachedException extends Exception {
 
     public QueueLimitReachedException() {

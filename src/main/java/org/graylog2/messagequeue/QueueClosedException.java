@@ -24,6 +24,7 @@ package org.graylog2.messagequeue;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class QueueClosedException extends Exception {
 
     public QueueClosedException() {

@@ -7,6 +7,7 @@ package org.graylog2;
  *
  * @author Jochen Schalanda <jochen@schalanda.name>
  */
+@SuppressWarnings("serial")
 public class ConfigurationException extends Exception {
 
     public ConfigurationException(String message) {

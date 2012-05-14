@@ -28,6 +28,7 @@ package org.graylog2.forwarders;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class InvalidEndpointTypeException extends Exception {
 
 }

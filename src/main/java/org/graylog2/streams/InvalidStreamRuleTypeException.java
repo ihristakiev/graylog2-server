@@ -28,6 +28,7 @@ package org.graylog2.streams;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class InvalidStreamRuleTypeException extends Exception {
 
 }

@@ -25,6 +25,7 @@ package org.graylog2.forwarders.forwarders;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class MessageForwarderConfigurationException extends Exception {
 
     /**

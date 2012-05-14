@@ -27,5 +27,6 @@ package org.graylog2.messagehandlers.gelf;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 class IncompleteGELFMessageException extends GELFException {
 }

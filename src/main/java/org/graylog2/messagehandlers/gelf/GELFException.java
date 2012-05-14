@@ -3,6 +3,7 @@ package org.graylog2.messagehandlers.gelf;
 /**
  * Common base class for all exceptions regarding the GELF message handling
  */
+@SuppressWarnings("serial")
 public class GELFException extends Exception {
 
     public GELFException() {

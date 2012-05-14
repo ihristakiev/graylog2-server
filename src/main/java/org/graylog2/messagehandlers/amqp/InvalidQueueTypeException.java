@@ -25,6 +25,7 @@ package org.graylog2.messagehandlers.amqp;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class InvalidQueueTypeException extends Exception {
 
     /**

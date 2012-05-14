@@ -37,7 +37,7 @@ import java.util.concurrent.ConcurrentMap;
 public class ChunkedGELFClientManagerThread implements Runnable {
 
     private static final Logger LOG = Logger.getLogger(ChunkedGELFClientManagerThread.class);
-    private static final int RUN_INTERVAL = 10000;
+//    private static final int RUN_INTERVAL = 10000;
 
     private ChunkedGELFClientManager gelfClientManager;
 

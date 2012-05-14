@@ -21,12 +21,8 @@
 package org.graylog2.periodical;
 
 import org.apache.log4j.Logger;
-import org.graylog2.HostSystem;
 import org.graylog2.ServerValue;
-import org.graylog2.Tools;
-import org.graylog2.database.MongoBridge;
 import org.graylog2.messagehandlers.common.MessageCounter;
-import org.graylog2.messagequeue.MessageQueue;
 
 /**
  * ServerValueWriterThread.java

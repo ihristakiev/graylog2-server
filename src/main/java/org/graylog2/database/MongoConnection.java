@@ -38,7 +38,7 @@ public final class MongoConnection {
     private DB db;
 
     private DBCollection messagesCollection;
-    private DBCollection historicServerValuesCollection;
+//    private DBCollection historicServerValuesCollection;
     private DBCollection messageCountsCollection;
 
     private long messagesCollSize;

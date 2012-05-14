@@ -49,6 +49,7 @@ class GELFClientHandlerBase {
 
     protected GELFClientHandlerBase() { }
 
+    @SuppressWarnings("unchecked")
     protected boolean parse() {
         JSONObject json;
 

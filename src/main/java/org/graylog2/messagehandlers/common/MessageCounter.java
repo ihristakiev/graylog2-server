@@ -20,11 +20,10 @@
 
 package org.graylog2.messagehandlers.common;
 
-import org.bson.types.ObjectId;
-
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import org.bson.types.ObjectId;
 import org.graylog2.Tools;
 
 /**

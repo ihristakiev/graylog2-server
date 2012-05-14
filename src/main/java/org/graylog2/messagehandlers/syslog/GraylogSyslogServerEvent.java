@@ -31,6 +31,7 @@ import org.productivity.java.syslog4j.server.impl.event.SyslogServerEvent;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class GraylogSyslogServerEvent extends SyslogServerEvent implements SyslogServerEventIF {
 
     private String amqpReceiverQueue = null;

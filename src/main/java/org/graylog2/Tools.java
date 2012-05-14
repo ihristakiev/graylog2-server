@@ -20,8 +20,6 @@
 
 package org.graylog2;
 
-import org.apache.log4j.Logger;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -33,6 +31,7 @@ import java.net.UnknownHostException;
 import java.util.Calendar;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.InflaterInputStream;
+
 import org.drools.util.codec.Base64;
 
 /**
@@ -44,7 +43,7 @@ import org.drools.util.codec.Base64;
  */
 public final class Tools {
 
-    private static final Logger LOG = Logger.getLogger(Tools.class);
+//    private static final Logger LOG = Logger.getLogger(Tools.class);
 
     private Tools() { }
 

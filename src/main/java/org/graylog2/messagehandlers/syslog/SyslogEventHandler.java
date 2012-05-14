@@ -40,6 +40,7 @@ import org.graylog2.Main;
  *
  * @author Lennart Koopmann <lennart@socketfeed.com>
  */
+@SuppressWarnings("serial")
 public class SyslogEventHandler implements SyslogServerSessionlessEventHandlerIF {
 
     private static final Logger LOG = Logger.getLogger(SyslogEventHandler.class);

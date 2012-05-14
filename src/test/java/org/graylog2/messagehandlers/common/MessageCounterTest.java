@@ -5,13 +5,16 @@
 
 package org.graylog2.messagehandlers.common;
 
-import org.graylog2.Tools;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.util.HashMap;
 import java.util.Map;
+
 import org.bson.types.ObjectId;
+import org.graylog2.Tools;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -44,10 +47,15 @@ public class MessageCounterTest {
         ObjectId stream2 = new ObjectId();
         ObjectId stream3 = new ObjectId();
 
-        Map expected = new HashMap<String, Integer>();
+        
+        Map<String, Integer> expected = new HashMap<String, Integer>();
         expected.put(stream1.toString(), 1);
         expected.put(stream2.toString(), 5);
-        expected.put(stream3.toString(), 2);
+        expected.put(stream3.toString(), 2);  
+//        Map expected = new HashMap<String, Integer>();
+//        expected.put(stream1.toString(), 1);
+//        expected.put(stream2.toString(), 5);
+//        expected.put(stream3.toString(), 2);
 
         counter.countUpStream(stream1, 1);
         counter.countUpStream(stream2, 3);
@@ -64,7 +72,7 @@ public class MessageCounterTest {
         String host2 = "foo.example.org";
         String host3 = "example.com";
 
-        Map expected = new HashMap<String, Integer>();
+        Map<String, Integer> expected = new HashMap<String, Integer>();
         expected.put(Tools.encodeBase64(host1), 5);
         expected.put(Tools.encodeBase64(host2), 1);
         expected.put(Tools.encodeBase64(host3), 3);

@@ -53,7 +53,7 @@ public class StreamRuleMatcherFactoryTest {
     public void testBuildWithInvalidStreamRuleType() {
         boolean exceptionThrown = false;
         try {
-            StreamRuleMatcherIF messageMatcher = StreamRuleMatcherFactory.build(9001);
+            StreamRuleMatcherFactory.build(9001);
         } catch (InvalidStreamRuleTypeException e) {
             exceptionThrown = true;
         }

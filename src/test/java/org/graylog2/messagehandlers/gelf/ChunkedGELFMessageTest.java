@@ -66,7 +66,7 @@ public class ChunkedGELFMessageTest {
     public void testGetSequenceCount() throws InvalidGELFChunkException, ForeignGELFChunkException {
         ChunkedGELFMessage message = new ChunkedGELFMessage();
 
-        byte[] data = {1,3,5};
+        // byte[] data = {1,3,5};
         String hash = "123abc";
 
         // Insert a chunk.

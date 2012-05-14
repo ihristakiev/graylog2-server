@@ -20,14 +20,15 @@
 
 package org.graylog2.streams.matchers;
 
-import java.util.Map;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.bson.types.ObjectId;
-import com.mongodb.BasicDBObject;
-import java.util.HashMap;
 import org.graylog2.messagehandlers.gelf.GELFMessage;
 import org.graylog2.streams.StreamRule;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import com.mongodb.BasicDBObject;
 
 public class FullMessageMatcherTest {
 

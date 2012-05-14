@@ -20,10 +20,11 @@
 
 package org.graylog2.messagehandlers.amqp;
 
+import static org.junit.Assert.assertEquals;
+
 import java.net.ConnectException;
-import com.rabbitmq.client.Connection;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -41,7 +42,7 @@ public class AMQPBrokerTest {
     public void testGetConnection() throws Exception {
         AMQPBroker instance = new AMQPBroker(null, 0, null, null, null);
         try {
-            Connection connection = instance.getConnection();
+            instance.getConnection();
         } catch (ConnectException e) {
             // That's okay.
         }

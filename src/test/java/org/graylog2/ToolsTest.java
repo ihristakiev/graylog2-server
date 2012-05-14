@@ -24,19 +24,20 @@
 
 package org.graylog2;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.EOFException;
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.SocketAddress;
 import java.net.UnknownHostException;
 import java.util.Calendar;
 import java.util.zip.Deflater;
 import java.util.zip.GZIPOutputStream;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  *

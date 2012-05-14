@@ -2,8 +2,10 @@
 
 CMD=$1
 NOHUP=`which nohup`
-GRAYLOG_CONFIG=./misc/graylog2.conf
-GRAYLOG_JAR=./target/graylog2-server-0.9.6p1-RC2-jar-with-dependencies.jar
+GRAYLOG_HOME=~/logging/graylog2-server
+GRAYLOG_CONFIG=$GRAYLOG_HOME/misc/graylog2.conf
+GRAYLOG_VERSION=0.9.6p1-RC2
+GRAYLOG_JAR=$GRAYLOG_HOME/target/graylog2-server-$GRAYLOG_VERSION-jar-with-dependencies.jar
 
 start() {
 	echo "Starting graylog2-server ..."
